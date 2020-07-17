@@ -36,3 +36,37 @@ Run entirety of KMeans.R in RStudio
 #### kMeans of 6 colors      
 6means.png
 405 KB
+
+
+# Principle Component Analysis
+
+### Principle Components
+3, 114, 226, 337, 448
+
+### How to run
+Install packages jpeg and ggplot2
+
+Run entirety of pca_compression.R in RStudio
+
+### Results
+
+#### 3 Principle Components
+pca3.jpg
+32.9 KB
+
+#### 114 Principle Components      
+pca114.jpg
+105 KB
+
+#### 226 Principle Components      
+pca226.jpg
+97.5 KB
+
+#### 337 Principle Components      
+pca337.jpg
+88.2 KB
+
+#### 448 Principle Components     
+pca448.jpg
+45.3 KB
+
