@@ -8,3 +8,8 @@ https://www.seriouseats.com/recipes/images/2012/02/20120227-tonkotsu-ramen-broth
 
 ### K Means
 K = 2,3,4,5,6
+
+### How to run
+Install packages jpeg and ggplot2
+
+Run entirety of KMeans.R in RStudio
