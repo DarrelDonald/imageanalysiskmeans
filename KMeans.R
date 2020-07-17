@@ -30,35 +30,35 @@ ggplot(data = imgRGB, aes(x = x, y = y)) +
   labs(title = "Original Image: Ramen") +
   plotTheme()
 
-kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 2)
+kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 2, iter.max = 30)
 kColours <- rgb(kMeans$centers[kMeans$cluster,])
 ggplot(data = imgRGB, aes(x = x, y = y)) + 
   geom_point(colour = kColours) +
   labs(title = paste("k-Means Clustering of", 2, "Colors")) 
 plotTheme()
 
-kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 3)
+kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 3, iter.max = 30)
 kColours <- rgb(kMeans$centers[kMeans$cluster,])
 ggplot(data = imgRGB, aes(x = x, y = y)) + 
   geom_point(colour = kColours) +
   labs(title = paste("k-Means Clustering of", 3, "Colors")) 
 plotTheme()
 
-kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 4)
+kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 4, iter.max = 30)
 kColours <- rgb(kMeans$centers[kMeans$cluster,])
 ggplot(data = imgRGB, aes(x = x, y = y)) + 
   geom_point(colour = kColours) +
   labs(title = paste("k-Means Clustering of", 4, "Colors")) 
 plotTheme()
 
-kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 5)
+kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 5, iter.max = 30)
 kColours <- rgb(kMeans$centers[kMeans$cluster,])
 ggplot(data = imgRGB, aes(x = x, y = y)) + 
   geom_point(colour = kColours) +
   labs(title = paste("k-Means Clustering of", 5, "Colors")) 
 plotTheme()
 
-kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 6)
+kMeans <- kmeans(imgRGB[, c("R", "G", "B")], centers = 6, iter.max = 30)
 kColours <- rgb(kMeans$centers[kMeans$cluster,])
 ggplot(data = imgRGB, aes(x = x, y = y)) + 
   geom_point(colour = kColours) +
