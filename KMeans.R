@@ -1,12 +1,8 @@
 library(jpeg)
 url <- "https://www.seriouseats.com/recipes/images/2012/02/20120227-tonkotsu-ramen-broth-pork-fat-26.jpg"
 
-z <- tempfile()
-downloadedFile <- download.file(url, z, "Ramen.jpg")
-img <- readJPEG(z)
-
-file_size <- file.info(z)$size
-file_size
+downloadedFile <- download.file(url, "Ramen.jpg")
+img <- readJPEG("Ramen.jpg")
 
 imgDm <- dim(img)
 
