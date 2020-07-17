@@ -48,5 +48,5 @@ for (i in seq.int(3, round(nrow(img) - 10), length.out = 5)) {
   pca.img <- sapply(rgb.pca, function(j) {
     compressed.img <- j$x[,1:i] %*% t(j$rotation[,1:i])
   }, simplify = 'array')
-  writeJPEG(pca.img, paste('compressed/img_compressed_', round(i,0), '_components.jpg', sep = ''))
+  writeJPEG(pca.img, paste('compressed/pca', round(i,0), '.jpg', sep = ''))
 }
